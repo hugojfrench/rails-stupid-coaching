@@ -1,4 +1,13 @@
-<h1>heloo</h1>
-
-
-<%= link_to "Ask another question:", "/ask"%>
+<div class="container mt-5">
+  <div class="card ps-3 pt-3">
+    <%= params[:question]%><br>
+    <p ><em>- You</em></p>
+  </div>
+  <div class="card ps-3 pt-3 my-3">
+    <%= @answer %><br>
+    <p ><em>- Your coach</em></p>
+  </div>
+  <div>
+    <%= link_to "Ask another question:", "/ask", class:"btn btn-primary btn-lg"%>
+  </div>
+</div>
